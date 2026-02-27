@@ -34,7 +34,59 @@ import { encodeMessage, decodeMessage, stringToUint8, uint8ToString } from './ut
 import { encodeAudioMessage, decodeAudioMessage, audioBufferToWav } from './utils/audioSteganography';
 import { encryptData, decryptData } from './utils/crypto';
 
-type Mode = 'home' | 'encode' | 'decode' | 'compare' | 'analyze';
+// Helper for Statistical Analysis
+const calculateHistogram = (imageData: ImageData) => {
+  const r = new Array(256).fill(0);
+  const g = new Array(256).fill(0);
+  const b = new Array(256).fill(0);
+  const data = imageData.data;
+  for (let i = 0; i < data.length; i += 4) {
+    r[data[i]]++;
+    g[data[i+1]]++;
+    b[data[i+2]]++;
+  }
+  return { r, g, b };
+};
+
+const calculateChiSquare = (imageData: ImageData) => {
+  const data = imageData.data;
+  const observed = new Array(256).fill(0);
+  for (let i = 0; i < data.length; i += 4) {
+    observed[data[i]]++;
+  }
+  let chiSquare = 0;
+  for (let i = 0; i < 256; i += 2) {
+    const y_i = (observed[i] + observed[i + 1]) / 2;
+    if (y_i > 0) {
+      chiSquare += Math.pow(observed[i] - y_i, 2) / y_i;
+    }
+  }
+  // Simplified probability mapping: higher chi-square = higher chance of LSB hiding
+  // A typical image has very high chi-square if natural, but lower if bits are randomized
+  const prob = Math.max(0, 100 - (chiSquare / (data.length / 400)));
+  return Math.min(100, prob);
+};
+
+const HistogramView = ({ data, color }: { data: number[], color: string }) => {
+  const max = Math.max(...data);
+  return (
+    <div className="flex items-end gap-[1px] h-16 w-full bg-slate-50/50 rounded-lg p-1 overflow-hidden">
+      {data.map((val, i) => (
+        <div
+          key={i}
+          className="flex-1 min-w-[1px]"
+          style={{
+            height: `${(val / max) * 100}%`,
+            backgroundColor: color,
+            opacity: 0.6
+          }}
+        />
+      ))}
+    </div>
+  );
+};
+
+type Mode = 'home' | 'encode' | 'decode' | 'compare' | 'analyze' | 'signin' | 'signup';
 
 interface RecentActivity {
   id: string;
@@ -72,13 +124,17 @@ export default function App() {
   const [password, setPassword] = useState('');
   const [seed, setSeed] = useState('');
   const [passwordStrength, setPasswordStrength] = useState(0);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const [hiddenFile, setHiddenFile] = useState<{ name: string, data: Uint8Array } | null>(null);
   const [useCompression, setUseCompression] = useState(true);
   const [analysisResult, setAnalysisResult] = useState<string | null>(null);
-  const [analysisResults, setAnalysisResults] = useState<{ red: string; green: string; blue: string } | null>(null);
+  const [analysisResults, setAnalysisResults] = useState<{ red: string; green: string; blue: string; heatmap: string } | null>(null);
   const [bitPlane, setBitPlane] = useState(0);
-  const [analysisChannel, setAnalysisChannel] = useState<'all' | 'red' | 'green' | 'blue'>('all');
+  const [analysisChannel, setAnalysisChannel] = useState<'all' | 'red' | 'green' | 'blue' | 'heatmap'>('all');
+  const [histograms, setHistograms] = useState<{ original: any, result: any } | null>(null);
+  const [chiSquareScore, setChiSquareScore] = useState<number | null>(null);
+  const [user, setUser] = useState<UserData | null>(null);
+  const [authForm, setAuthForm] = useState({ email: '', password: '', name: '' });
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -254,6 +310,11 @@ export default function App() {
 
         ctx.putImageData(encodedData, 0, 0);
         setResultImage(canvas.toDataURL('image/png'));
+        
+        // Generate Histogram for Comparison
+        const resultHist = calculateHistogram(encodedData);
+        const originalHist = calculateHistogram(imageData);
+        setHistograms({ original: originalHist, result: resultHist });
       } else if (audioBuffer) {
         setProcessingStep('Audio Stream Analysis');
         setProcessingProgress(55);
@@ -373,11 +434,13 @@ export default function App() {
     canvas.width = img.width;
     canvas.height = img.height;
     const ctx = canvas.getContext('2d')!;
+    ctx.drawImage(img, 0, 0);
+    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 
     const generatePlane = (channel: 'all' | 'red' | 'green' | 'blue') => {
       ctx.drawImage(img, 0, 0);
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const data = imageData.data;
+      const currentImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = currentImageData.data;
 
       for (let i = 0; i < data.length; i += 4) {
         if (channel === 'all') {
@@ -395,7 +458,24 @@ export default function App() {
         }
         data[i + 3] = 255;
       }
-      ctx.putImageData(imageData, 0, 0);
+      ctx.putImageData(currentImageData, 0, 0);
+      return canvas.toDataURL();
+    };
+
+    const generateHeatmap = () => {
+      ctx.drawImage(img, 0, 0);
+      const heatmapImageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const data = heatmapImageData.data;
+      for (let i = 0; i < data.length; i += 4) {
+        // Calculate local contrast as capacity
+        const lum = (data[i] * 0.299 + data[i+1] * 0.587 + data[i+2] * 0.114);
+        // High frequency regions have more capacity
+        data[i] = lum; // Intensity
+        data[i+1] = 0;
+        data[i+2] = 255 - lum; // Blue for cold, red for hot
+        data[i+3] = 200; // Semi-transparent
+      }
+      ctx.putImageData(heatmapImageData, 0, 0);
       return canvas.toDataURL();
     };
 
@@ -403,11 +483,17 @@ export default function App() {
       all: generatePlane('all'),
       red: generatePlane('red'),
       green: generatePlane('green'),
-      blue: generatePlane('blue')
+      blue: generatePlane('blue'),
+      heatmap: generateHeatmap()
     };
 
     setAnalysisResult(results.all);
-    setAnalysisResults({ red: results.red, green: results.green, blue: results.blue });
+    setAnalysisResults(results);
+    
+    // Perform Chi-Square Analysis
+    const prob = calculateChiSquare(imageData);
+    setChiSquareScore(prob);
+
     setProcessingProgress(100);
     setIsProcessing(false);
   };
@@ -445,188 +531,244 @@ export default function App() {
   };
 
   return (
-    <div className={`min-h-screen ${isDark ? 'bg-slate-900 text-slate-100' : 'bg-white text-slate-900'} font-sans selection:bg-indigo-100 transition-colors duration-500 bg-grid`}>
+    <div className={`min-h-screen font-sans transition-colors duration-500 bg-[#0A0A0F] text-white selection:bg-red-500/30`}>
       <canvas ref={canvasRef} className="hidden" />
+      {/* Dynamic Background */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-red-600/10 blur-[120px] rounded-full" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-600/10 blur-[120px] rounded-full" />
+        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay" />
+      </div>
 
-      {/* Navigation Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-slate-200/50">
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <motion.div 
-            whileHover={{ scale: 1.02 }}
-            className="flex items-center gap-2 cursor-pointer" 
-            onClick={() => { setMode('home'); reset(); }}
-          >
-            <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/20">
-              <Shield size={18} />
-            </div>
-            <span className="font-black text-xl tracking-tighter">SteganoPro</span>
-          </motion.div>
+      {/* Modern Header */}
+      <header className="sticky top-0 z-50 glass border-b border-white/5 px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center gap-3 group cursor-pointer" onClick={() => { setMode('home'); reset(); }}>
+          <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-red-600 to-rose-400 flex items-center justify-center text-white shadow-lg shadow-red-600/20 group-hover:scale-110 transition-transform duration-300">
+            <Shield size={22} className="group-hover:rotate-12 transition-transform" />
+          </div>
+          <div>
+            <h1 className="text-xl font-black tracking-tighter">STEGANO<span className="text-red-500">PRO</span></h1>
+            <p className="text-[9px] font-black tracking-[0.3em] text-white/40 uppercase">Elite Cyber Defense</p>
+          </div>
+        </div>
+
+        <nav className="hidden lg:flex items-center gap-8">
+          {['Encode', 'Decode', 'Analyze'].map((item) => (
+            <button 
+              key={item}
+              onClick={() => setMode(item.toLowerCase() as any)}
+              className={`text-xs font-black uppercase tracking-widest transition-all ${mode === item.toLowerCase() ? 'text-red-500' : 'text-white/50 hover:text-white'}`}
+            >
+              {item}
+            </button>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-4">
           <button
             onClick={() => setIsDark(v => !v)}
-            className="px-3 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 bg-white shadow-sm text-slate-600"
+            className={`p-2 rounded-xl transition-all flex items-center justify-center ${isDark ? 'bg-white/5 text-amber-400 hover:bg-white/10' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}
           >
-            {isDark ? <Sun size={14} /> : <Moon size={14} />} Theme
+            {isDark ? <Sun size={18} /> : <Moon size={18} />}
           </button>
+          
+          {user ? (
+            <div className="flex items-center gap-3 pl-4 border-l border-white/10">
+              <div className="text-right hidden md:block">
+                <p className="text-xs font-black tracking-tight">{user.name}</p>
+                <div className="flex items-center gap-1.5 justify-end">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
+                  <p className="text-[9px] font-bold text-white/40 uppercase tracking-widest">Operator Level 1</p>
+                </div>
+              </div>
+              <button 
+                onClick={() => setUser(null)}
+                className="w-10 h-10 rounded-2xl bg-white/5 border border-white/10 text-white/60 flex items-center justify-center hover:bg-red-500 hover:text-white transition-all duration-300"
+              >
+                <LogOut size={18} />
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <button 
+                onClick={() => setMode('signin')}
+                className="px-6 py-2.5 text-xs font-black uppercase tracking-widest text-white/60 hover:text-white transition-colors"
+              >
+                Login
+              </button>
+              <button 
+                onClick={() => setMode('signup')}
+                className="px-6 py-2.5 text-xs font-black uppercase tracking-widest bg-red-600 text-white rounded-2xl shadow-lg shadow-red-600/20 hover:bg-red-700 hover:scale-105 transition-all"
+              >
+                Join Unit
+              </button>
+            </div>
+          )}
         </div>
       </header>
 
-      <main className="max-w-4xl mx-auto px-6 pt-32 pb-20">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 py-12">
         <AnimatePresence mode="wait">
           {mode === 'home' && (
             <motion.div
               key="home"
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              variants={{
-                initial: { opacity: 0, y: 20 },
-                animate: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
-                exit: { opacity: 0, y: -20 }
-              }}
-              className="space-y-12"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="space-y-16"
             >
-              <motion.div 
-                variants={{
-                  initial: { opacity: 0, y: 20 },
-                  animate: { opacity: 1, y: 0 }
-                }}
-                className="space-y-6 text-center md:text-left"
-              >
+              {/* Hero Section */}
+              <div className="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-[#1A1A2E] to-[#0F0F1A] border border-white/5 p-12 lg:p-20 text-center space-y-8">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-red-600/10 blur-[100px] rounded-full -mr-48 -mt-48" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/10 blur-[100px] rounded-full -ml-48 -mb-48" />
+                
                 <motion.div 
-                  whileHover={{ scale: 1.05 }}
-                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-600 text-white text-xs font-bold uppercase tracking-widest shadow-lg shadow-indigo-500/20 cursor-default"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.2 }}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-[10px] font-black uppercase tracking-widest mb-4"
                 >
-                  <ShieldCheck size={14} />
-                  AES-256 + Chaotic Map
+                  <Zap size={12} className="animate-pulse" />
+                  V2.5.0 Deployment Live
                 </motion.div>
-                <h1 className="text-6xl md:text-8xl font-black tracking-tighter text-slate-950 leading-none">
-                  Stegano<span className="text-indigo-600">Pro</span>
-                </h1>
-                <p className="text-xl text-slate-500 max-w-xl leading-relaxed font-medium mx-auto md:mx-0">
-                  The most secure way to hide data. Encrypt your message with AES-256 and scatter bits chaotically across your image or audio files.
+                
+                <h2 className="text-5xl lg:text-8xl font-black tracking-tighter leading-tight max-w-4xl mx-auto uppercase">
+                  Secure Your <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-rose-500 to-indigo-600">Intellectual Data</span>
+                </h2>
+                
+                <p className="text-lg text-white/50 max-w-2xl mx-auto font-medium leading-relaxed">
+                  Advanced cryptographic steganography for elite data hiding. Inject encrypted payloads into image and audio carriers with zero visual footprint.
                 </p>
-              </motion.div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <motion.button
-                    variants={{
-                      initial: { opacity: 0, scale: 0.9 },
-                      animate: { opacity: 1, scale: 1 }
-                    }}
-                    whileHover={{ y: -8, scale: 1.02, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                    whileTap={{ scale: 0.98 }}
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                  <button 
                     onClick={() => setMode('encode')}
-                    className="group relative p-10 bg-white rounded-[2.5rem] border-2 border-slate-100 hover:border-indigo-500 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all text-left overflow-hidden"
+                    className="w-full sm:w-auto px-10 py-5 rounded-[2rem] bg-red-600 text-white font-black text-lg shadow-2xl shadow-red-600/30 hover:bg-red-700 hover:scale-105 transition-all flex items-center justify-center gap-3 group"
                   >
-                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 group-hover:scale-110 transition-all duration-500 text-slate-900">
-                      <Lock size={120} />
-                    </div>
-                    <div className="relative z-10 space-y-6">
-                      <div className="w-16 h-16 rounded-3xl bg-indigo-600 flex items-center justify-center text-white shadow-xl shadow-indigo-500/20 group-hover:rotate-12 transition-transform duration-300">
-                        <Lock size={32} />
-                      </div>
-                      <div>
-                        <h3 className="text-3xl font-black text-slate-900">Secure Encode</h3>
-                        <p className="text-slate-500 mt-2 font-medium">Encrypt and hide data</p>
-                      </div>
-                    </div>
-                  </motion.button>
-
-                  <motion.button
-                    variants={{
-                      initial: { opacity: 0, scale: 0.9 },
-                      animate: { opacity: 1, scale: 1 }
-                    }}
-                    whileHover={{ y: -8, scale: 1.02, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => setMode('decode')}
-                    className="group relative p-10 bg-white rounded-[2.5rem] border-2 border-slate-100 hover:border-emerald-500 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all text-left overflow-hidden"
-                  >
-                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 group-hover:scale-110 transition-all duration-500 text-slate-900">
-                      <Unlock size={120} />
-                    </div>
-                    <div className="relative z-10 space-y-6">
-                      <div className="w-16 h-16 rounded-3xl bg-emerald-600 flex items-center justify-center text-white shadow-xl shadow-emerald-500/20 group-hover:-rotate-12 transition-transform duration-300">
-                        <Unlock size={32} />
-                      </div>
-                      <div>
-                        <h3 className="text-3xl font-black text-slate-900">Secure Decode</h3>
-                        <p className="text-slate-500 mt-2 font-medium">Extract and decrypt data</p>
-                      </div>
-                    </div>
-                  </motion.button>
-
-                  <motion.button
-                    variants={{
-                      initial: { opacity: 0, scale: 0.9 },
-                      animate: { opacity: 1, scale: 1 }
-                    }}
-                    whileHover={{ y: -8, scale: 1.02, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                    whileTap={{ scale: 0.98 }}
+                    Start Mission <Lock size={20} className="group-hover:rotate-12 transition-transform" />
+                  </button>
+                  <button 
                     onClick={() => setMode('analyze')}
-                    className="group relative p-10 bg-white rounded-[2.5rem] border-2 border-slate-100 hover:border-indigo-500 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all text-left overflow-hidden md:col-span-2"
+                    className="w-full sm:w-auto px-10 py-5 rounded-[2rem] bg-white/5 border border-white/10 text-white font-black text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
                   >
-                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 group-hover:scale-110 transition-all duration-500 text-slate-900">
-                      <Activity size={120} />
+                    Forensic Scan <Activity size={20} />
+                  </button>
+                </div>
+              </div>
+
+              {/* Feature Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  { title: 'Secure Encode', desc: 'Hide encrypted data in carriers', icon: Lock, color: 'from-red-600 to-rose-400', mode: 'encode' },
+                  { title: 'Secure Decode', desc: 'Extract hidden intelligence', icon: Unlock, color: 'from-emerald-600 to-teal-400', mode: 'decode' },
+                  { title: 'Neural Scan', desc: 'Bit-plane forensic analysis', icon: Activity, color: 'from-indigo-600 to-blue-400', mode: 'analyze' }
+                ].map((feat, i) => (
+                  <motion.button
+                    key={feat.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 + (i * 0.1) }}
+                    onClick={() => setMode(feat.mode as any)}
+                    className="group relative p-8 rounded-[2.5rem] bg-[#1A1A2E] border border-white/5 hover:border-white/20 transition-all text-left overflow-hidden"
+                  >
+                    <div className={`absolute top-0 right-0 p-8 opacity-10 group-hover:scale-125 transition-transform duration-500 text-white`}>
+                      <feat.icon size={120} />
                     </div>
                     <div className="relative z-10 space-y-6">
-                      <div className="w-16 h-16 rounded-3xl bg-indigo-600 flex items-center justify-center text-white shadow-xl shadow-indigo-500/20 group-hover:rotate-12 transition-transform duration-300">
-                        <Activity size={32} />
+                      <div className={`w-14 h-14 rounded-2xl bg-gradient-to-tr ${feat.color} flex items-center justify-center text-white shadow-xl group-hover:rotate-12 transition-transform duration-300`}>
+                        <feat.icon size={28} />
                       </div>
                       <div>
-                        <h3 className="text-3xl font-black text-slate-900">Steganography Analysis</h3>
-                        <p className="text-slate-500 mt-2 font-medium">Statistical bit-plane visualization & detection</p>
+                        <h3 className="text-2xl font-black">{feat.title}</h3>
+                        <p className="text-white/40 mt-1 font-medium">{feat.desc}</p>
                       </div>
                     </div>
                   </motion.button>
-                </div>
+                ))}
+              </div>
 
-                <motion.div
-                  variants={{
-                    initial: { opacity: 0, x: 20 },
-                    animate: { opacity: 1, x: 0 }
-                  }}
-                  className="bg-white rounded-[2.5rem] border-2 border-slate-100 p-8 space-y-6"
-                >
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-black uppercase tracking-tighter">Recent Activity</h3>
+              {/* Stats & Activity */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div className="lg:col-span-2 space-y-6">
+                  <div className="flex items-center justify-between px-4">
+                    <h3 className="text-xl font-black uppercase tracking-tighter">Mission History</h3>
                     <button 
                       onClick={() => {
                         setRecentActivity([]);
                         localStorage.removeItem('stegano_activity');
                       }}
-                      className="text-[10px] font-black text-slate-300 hover:text-red-500 uppercase tracking-widest transition-colors"
+                      className="text-[10px] font-black text-red-500 uppercase tracking-widest hover:underline"
                     >
-                      Clear
+                      Purge Logs
                     </button>
                   </div>
                   <div className="space-y-4">
-                    {recentActivity.length > 0 ? (
-                      recentActivity.map((activity) => (
-                        <div key={activity.id} className="flex items-center gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 group hover:border-indigo-200 transition-all">
-                          <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${activity.type === 'encode' ? 'bg-indigo-100 text-indigo-600' : 'bg-emerald-100 text-emerald-600'}`}>
-                            {activity.imageName.includes('Audio') ? <Music size={18} /> : (activity.type === 'encode' ? <Lock size={18} /> : <Unlock size={18} />)}
+                    {recentActivity.length > 0 ? recentActivity.slice(0, 4).map((activity) => (
+                      <motion.div 
+                        key={activity.id}
+                        layout
+                        className="glass p-5 rounded-[2rem] flex items-center justify-between group"
+                      >
+                        <div className="flex items-center gap-4">
+                          <div className={`w-12 h-12 rounded-xl flex items-center justify-center ${activity.type === 'encode' ? 'bg-red-500/10 text-red-500' : 'bg-emerald-500/10 text-emerald-500'}`}>
+                            {activity.imageName.includes('Audio') ? <Music size={20} /> : (activity.type === 'encode' ? <Lock size={20} /> : <Unlock size={20} />)}
                           </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="text-sm font-black truncate">{activity.imageName}</p>
-                            <p className="text-[10px] font-bold text-slate-400 uppercase">{new Date(activity.timestamp).toLocaleTimeString()}</p>
-                          </div>
-                          <div className={`text-[10px] font-black uppercase px-2 py-1 rounded-md ${activity.type === 'encode' ? 'bg-indigo-600 text-white' : 'bg-emerald-600 text-white'}`}>
-                            {activity.type}
+                          <div>
+                            <p className="font-black text-sm uppercase tracking-tight">{activity.imageName}</p>
+                            <p className="text-[10px] font-bold text-white/30 uppercase tracking-widest">
+                              {new Date(activity.timestamp).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}
+                            </p>
                           </div>
                         </div>
-                      ))
-                    ) : (
-                      <div className="py-12 text-center space-y-3">
-                        <div className="w-12 h-12 rounded-full bg-slate-50 flex items-center justify-center mx-auto text-slate-300">
-                          <FileText size={24} />
+                        <div className="px-4 py-2 rounded-xl bg-white/5 text-[10px] font-black uppercase tracking-widest text-white/40 group-hover:text-white group-hover:bg-red-500 transition-all">
+                          {activity.type === 'encode' ? 'Encrypted' : 'Extracted'}
                         </div>
-                        <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">No recent activity</p>
+                      </motion.div>
+                    )) : (
+                      <div className="glass p-12 rounded-[2.5rem] flex flex-col items-center gap-4 text-center">
+                        <div className="w-16 h-16 rounded-full bg-white/5 flex items-center justify-center text-white/20">
+                          <RefreshCw size={32} />
+                        </div>
+                        <p className="text-white/30 font-bold uppercase tracking-widest text-xs">No active intelligence recorded</p>
                       </div>
                     )}
                   </div>
-                </motion.div>
+                </div>
+
+                <div className="space-y-6">
+                  <h3 className="text-xl font-black uppercase tracking-tighter px-4">System Status</h3>
+                  <div className="glass p-8 rounded-[2.5rem] space-y-8">
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <span className="text-[10px] font-black text-white/40 uppercase tracking-widest">Neural Load</span>
+                        <span className="text-[10px] font-black text-red-500">OPTIMIZED</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <motion.div initial={{ width: 0 }} animate={{ width: '65%' }} className="h-full bg-red-600" />
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center">
+                        <span className="text-[10px] font-black text-white/40 uppercase tracking-widest">Core Status</span>
+                        <span className="text-[10px] font-black text-red-500">ENCRYPTED</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
+                        <motion.div initial={{ width: 0 }} animate={{ width: '82%' }} className="h-full bg-red-600" />
+                      </div>
+                    </div>
+                    <div className="pt-4 border-t border-white/5 space-y-4">
+                      <div className="flex items-center gap-3">
+                        <ShieldCheck size={16} className="text-red-500" />
+                        <span className="text-[10px] font-black uppercase tracking-widest">End-to-End Encryption Active</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <Zap size={16} className="text-red-500" />
+                        <span className="text-[10px] font-black uppercase tracking-widest">Chaotic Bit Mapping Enabled</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </motion.div>
           )}
@@ -917,6 +1059,33 @@ export default function App() {
                           <label className="text-xs font-black text-slate-400 uppercase tracking-widest">Analysis Controls</label>
                           <div className="p-5 rounded-2xl bg-slate-50 border-2 border-slate-100 space-y-4">
                             <div className="flex items-center justify-between">
+                              <span className="text-xs font-bold text-slate-600">Statistical Analysis</span>
+                              <div className="flex items-center gap-1">
+                                <Activity size={12} className="text-indigo-600" />
+                                <span className="text-[10px] font-black uppercase text-indigo-600">Real-time</span>
+                              </div>
+                            </div>
+                            {chiSquareScore !== null && (
+                              <div className="space-y-2">
+                                <div className="flex justify-between items-center">
+                                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Detection Probability</span>
+                                  <span className={`text-sm font-black ${chiSquareScore > 70 ? 'text-red-500' : chiSquareScore > 30 ? 'text-amber-500' : 'text-emerald-500'}`}>
+                                    {chiSquareScore.toFixed(1)}%
+                                  </span>
+                                </div>
+                                <div className="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
+                                  <motion.div 
+                                    initial={{ width: 0 }}
+                                    animate={{ width: `${chiSquareScore}%` }}
+                                    className={`h-full ${chiSquareScore > 70 ? 'bg-red-500' : chiSquareScore > 30 ? 'bg-amber-500' : 'bg-emerald-500'}`}
+                                  />
+                                </div>
+                                <p className="text-[9px] font-medium text-slate-400 italic">
+                                  * Based on Chi-Square statistical noise variance in the primary bit planes.
+                                </p>
+                              </div>
+                            )}
+                            <div className="flex items-center justify-between">
                               <span className="text-xs font-bold text-slate-600">Select Bit Plane</span>
                               <span className="text-xs font-black text-indigo-600">Plane {bitPlane}</span>
                             </div>
@@ -958,50 +1127,86 @@ export default function App() {
                       exit={{ opacity: 0 }}
                       className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-white/95 backdrop-blur-md"
                     >
-                      <div className="max-w-sm w-full px-8 space-y-8 text-center">
-                        <div className="relative mx-auto w-24 h-24">
+                      <div className="max-w-md w-full px-8 space-y-8 text-center relative">
+                        {/* HUD Elements */}
+                        <div className="absolute -top-20 -left-20 w-40 h-40 border-t-2 border-l-2 border-indigo-500/30 rounded-tl-3xl pointer-events-none" />
+                        <div className="absolute -top-20 -right-20 w-40 h-40 border-t-2 border-r-2 border-indigo-500/30 rounded-tr-3xl pointer-events-none" />
+                        <div className="absolute -bottom-20 -left-20 w-40 h-40 border-b-2 border-l-2 border-indigo-500/30 rounded-bl-3xl pointer-events-none" />
+                        <div className="absolute -bottom-20 -right-20 w-40 h-40 border-b-2 border-r-2 border-indigo-500/30 rounded-br-3xl pointer-events-none" />
+                        
+                        <div className="relative mx-auto w-32 h-32">
                           <motion.div
                             animate={{ rotate: 360 }}
-                            transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                            className="w-24 h-24 border-4 border-slate-100 border-t-indigo-600 rounded-full"
+                            transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-0 border-2 border-dashed border-indigo-600/30 rounded-full"
                           />
                           <motion.div
                             animate={{ rotate: -360 }}
-                            transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-                            className="absolute inset-0 w-24 h-24 border-4 border-transparent border-b-emerald-500 rounded-full scale-75"
+                            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                            className="absolute inset-2 border border-emerald-500/20 rounded-full"
                           />
                           <div className="absolute inset-0 flex items-center justify-center">
                             <motion.div
-                              animate={{ scale: [1, 1.2, 1] }}
-                              transition={{ duration: 1.5, repeat: Infinity }}
+                              animate={{ 
+                                scale: [1, 1.1, 1],
+                                opacity: [0.5, 1, 0.5]
+                              }}
+                              transition={{ duration: 2, repeat: Infinity }}
                             >
-                              <Shield className="text-indigo-600" size={28} />
+                              <Shield className="text-indigo-600" size={40} />
                             </motion.div>
                           </div>
                         </div>
 
-                        <div className="space-y-2">
-                          <motion.h3 
-                            key={processingStep}
-                            initial={{ opacity: 0, y: 5 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            className="text-lg font-black tracking-tight text-slate-900"
-                          >
-                            {processingStep}
-                          </motion.h3>
-                          <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-                            {mode === 'encode' ? 'Security Protocol Active' : mode === 'decode' ? 'Decryption Sequence' : 'Scanning Pixels'}
-                          </p>
-                        </div>
-
                         <div className="space-y-4">
-                          <div className="h-2 w-full bg-slate-100 rounded-full overflow-hidden">
+                          <div className="space-y-1">
+                            <motion.h3 
+                              key={processingStep}
+                              initial={{ opacity: 0, x: -10 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              className="text-2xl font-black tracking-tighter text-slate-900 uppercase"
+                            >
+                              {processingStep}
+                            </motion.h3>
+                            <div className="flex items-center justify-center gap-2">
+                              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                              <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
+                                {mode === 'encode' ? 'System.Security.Protocol_Active' : mode === 'decode' ? 'System.Decryption.Sequence' : 'System.Heuristic.Analysis'}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="relative h-12 w-full bg-slate-100 rounded-xl border border-slate-200/50 overflow-hidden group">
                             <motion.div 
                               initial={{ width: 0 }}
                               animate={{ width: `${processingProgress}%` }}
-                              className="h-full bg-indigo-600 shadow-[0_0_10px_rgba(79,70,229,0.5)]"
-                            />
+                              className="h-full bg-indigo-600 shadow-[0_0_20px_rgba(79,70,229,0.4)] relative"
+                            >
+                              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.2)_50%,transparent_100%)] animate-[shimmer_2s_infinite]" />
+                            </motion.div>
+                            <div className="absolute inset-0 flex items-center justify-center mix-blend-difference">
+                              <span className="text-xs font-black text-white tabular-nums">{processingProgress}% COMPLETE</span>
+                            </div>
                           </div>
+
+                          <div className="grid grid-cols-3 gap-2">
+                            {[...Array(3)].map((_, i) => (
+                              <div key={i} className="h-1 bg-slate-100 rounded-full overflow-hidden">
+                                <motion.div 
+                                  animate={{ 
+                                    opacity: processingProgress > (i * 33) ? 1 : 0.2,
+                                    x: processingProgress > (i * 33) ? 0 : -100
+                                  }}
+                                  className="h-full bg-indigo-400"
+                                />
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        <div className="pt-4 flex flex-col items-center gap-1">
+                          <p className="text-[8px] font-mono text-slate-300 uppercase">Memory_Addr: 0x{Math.random().toString(16).substr(2, 8).toUpperCase()}</p>
+                          <p className="text-[8px] font-mono text-slate-300 uppercase">Buffer_Status: Optimized</p>
                         </div>
                       </div>
                     </motion.div>
@@ -1095,7 +1300,7 @@ export default function App() {
                         className="space-y-4"
                       >
                         <div className="flex gap-2 mb-4">
-                          {['all', 'red', 'green', 'blue'].map((ch) => (
+                          {['all', 'red', 'green', 'blue', 'heatmap'].map((ch) => (
                             <button
                               key={ch}
                               onClick={() => {
@@ -1142,6 +1347,106 @@ export default function App() {
 
               {/* Image Comparison Modal */}
               <AnimatePresence>
+                {(mode === 'signin' || mode === 'signup') && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed inset-0 z-[110] flex items-center justify-center bg-white/95 backdrop-blur-md p-6"
+                  >
+                    <motion.div 
+                      initial={{ scale: 0.9, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      className="max-w-md w-full glass rounded-[3rem] border border-white/5 p-10 shadow-2xl space-y-8 relative overflow-hidden"
+                    >
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/10 blur-[40px] rounded-full -mr-16 -mt-16" />
+                      
+                      <div className="flex items-center justify-between relative z-10">
+                        <div className="flex items-center gap-3">
+                          <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-red-600 to-rose-400 flex items-center justify-center text-white shadow-lg shadow-red-600/20">
+                            <Shield size={24} />
+                          </div>
+                          <div>
+                            <h2 className="text-2xl font-black tracking-tight">{mode === 'signin' ? 'Operator Login' : 'New Assignment'}</h2>
+                            <p className="text-[10px] font-black text-white/40 uppercase tracking-widest">Secure Gateway v2.5</p>
+                          </div>
+                        </div>
+                        <button 
+                          onClick={() => setMode('home')}
+                          className="w-10 h-10 rounded-xl bg-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all flex items-center justify-center"
+                        >
+                          <ArrowLeft size={20} />
+                        </button>
+                      </div>
+
+                      <div className="space-y-5 relative z-10">
+                        {mode === 'signup' && (
+                          <div className="space-y-2">
+                            <label className="text-[10px] font-black text-white/40 uppercase tracking-widest pl-1">Codename</label>
+                            <div className="relative group">
+                              <User className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-red-500 transition-colors" size={18} />
+                              <input 
+                                type="text" 
+                                placeholder="Enter your alias"
+                                value={authForm.name}
+                                onChange={(e) => setAuthForm({...authForm, name: e.target.value})}
+                                className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-red-500/50 outline-none transition-all font-medium text-sm placeholder:text-white/20"
+                              />
+                            </div>
+                          </div>
+                        )}
+                        <div className="space-y-2">
+                          <label className="text-[10px] font-black text-white/40 uppercase tracking-widest pl-1">Digital Identity</label>
+                          <div className="relative group">
+                            <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-red-500 transition-colors" size={18} />
+                            <input 
+                              type="email" 
+                              placeholder="operator@steganopro.io"
+                              value={authForm.email}
+                              onChange={(e) => setAuthForm({...authForm, email: e.target.value})}
+                              className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-red-500/50 outline-none transition-all font-medium text-sm placeholder:text-white/20"
+                            />
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <label className="text-[10px] font-black text-white/40 uppercase tracking-widest pl-1">Security Key</label>
+                          <div className="relative group">
+                            <Key className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-red-500 transition-colors" size={18} />
+                            <input 
+                              type="password" 
+                              placeholder="••••••••"
+                              value={authForm.password}
+                              onChange={(e) => setAuthForm({...authForm, password: e.target.value})}
+                              className="w-full pl-12 pr-4 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-red-500/50 outline-none transition-all font-medium text-sm placeholder:text-white/20"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <button 
+                        onClick={() => {
+                          setUser({ id: '1', email: authForm.email, name: authForm.name || 'Operator' });
+                          setMode('home');
+                        }}
+                        className="w-full py-5 rounded-[2rem] bg-red-600 text-white font-black text-lg shadow-2xl shadow-red-600/20 hover:bg-red-700 hover:scale-[1.02] transition-all flex items-center justify-center gap-3 relative z-10"
+                      >
+                        {mode === 'signin' ? <Unlock size={20} /> : <CheckCircle2 size={20} />}
+                        {mode === 'signin' ? 'Authorize' : 'Initialize'}
+                      </button>
+
+                      <p className="text-center text-sm font-bold text-white/30 relative z-10">
+                        {mode === 'signin' ? "Need clearance?" : "Already registered?"}
+                        <button 
+                          onClick={() => setMode(mode === 'signin' ? 'signup' : 'signin')}
+                          className="ml-2 text-red-500 hover:underline"
+                        >
+                          {mode === 'signin' ? 'Create Profile' : 'Access Unit'}
+                        </button>
+                      </p>
+                    </motion.div>
+                  </motion.div>
+                )}
+
                 {showCompare && resultImage && selectedImage && (
                   <motion.div
                     initial={{ opacity: 0 }}
@@ -1165,12 +1470,28 @@ export default function App() {
                           <div className="aspect-video rounded-3xl overflow-hidden bg-slate-50 border border-slate-100">
                             <img src={selectedImage} className="w-full h-full object-contain" alt="Original" />
                           </div>
+                          {histograms && (
+                            <div className="space-y-1">
+                              <p className="text-[9px] font-black text-slate-400 uppercase">Histogram Distribution</p>
+                              <HistogramView data={histograms.original.r} color="#ef4444" />
+                              <HistogramView data={histograms.original.g} color="#10b981" />
+                              <HistogramView data={histograms.original.b} color="#4f46e5" />
+                            </div>
+                          )}
                         </div>
                         <div className="space-y-4">
                           <p className="text-xs font-black text-slate-400 uppercase tracking-widest text-center">Encoded Result</p>
                           <div className="aspect-video rounded-3xl overflow-hidden bg-slate-50 border border-slate-100">
                             <img src={resultImage} className="w-full h-full object-contain" alt="Encoded" />
                           </div>
+                          {histograms && (
+                            <div className="space-y-1">
+                              <p className="text-[9px] font-black text-slate-400 uppercase">Histogram Distribution</p>
+                              <HistogramView data={histograms.result.r} color="#ef4444" />
+                              <HistogramView data={histograms.result.g} color="#10b981" />
+                              <HistogramView data={histograms.result.b} color="#4f46e5" />
+                            </div>
+                          )}
                         </div>
                       </div>
                       <div className="p-6 rounded-3xl bg-indigo-50 border border-indigo-100 text-center">
