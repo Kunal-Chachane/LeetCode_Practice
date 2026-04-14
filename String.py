@@ -18,3 +18,10 @@ print(Str.upper())
 # Finding length of a String
 print(len(Str))
 
+# Printing using unicode
+print("\u0434")
+
+# Concanating two strings
+A = "Hello"
+B = "World"
+print(A+ " " +B)
