@@ -31,3 +31,8 @@ price = 747583558
 color = "Metallic blue"
 fact = f"The price of Lamborghini is {price} and {color} is rare"
 print(fact)
+
+# Repeating a string X times
+a = "Kunal "
+result = a * 3
+print(result)
