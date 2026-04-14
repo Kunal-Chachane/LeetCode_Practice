@@ -21,7 +21,13 @@ print(len(Str))
 # Printing using unicode
 print("\u0434")
 
-# Concanating two strings
+# Concatenating two strings
 A = "Hello"
 B = "World"
-print(A+ " " +B)
+print(A + " " + B)
+
+# Using f-string
+price = 747583558
+color = "Metallic blue"
+fact = f"The price of Lamborghini is {price} and {color} is rare"
+print(fact)
