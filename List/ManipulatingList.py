@@ -17,3 +17,11 @@ print(List)
 
 List.pop(2)
 print(List)
+
+List.clear
+print(List)
+
+a = [1,2,3]
+b = [4,5]
+result = a + b +[6]
+print(result)
