@@ -15,7 +15,7 @@ medium = [  "zebra",
          ]
 
 hard = [ "elephant",
-         "icecube",
+         "Iceman",
          "germany",
          "pentaloon",
          "pomegrenade"
