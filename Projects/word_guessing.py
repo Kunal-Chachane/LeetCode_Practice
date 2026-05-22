@@ -37,7 +37,15 @@ else:
     print("Invaid choice! selecting default easy mode")
     secret = choice.random(easy)
 
-attempt = 0;
+attempt = 0
 print("Guess the sceret word")
+
+while True:
+    guess = input(print("Enter the word: ")).lower()
+    attempt += 1
+
+    if guess == secret:
+       print(f"Congratulations! You guessed the word in {attempt} attempts")
+       break
 hint = ""
 
