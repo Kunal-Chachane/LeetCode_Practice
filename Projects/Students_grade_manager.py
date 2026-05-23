@@ -61,10 +61,10 @@ def view_result():
 print("---- STUDENT GRADE MANAGER ----")
 
 while True:
-    print("\n1. Add student (Create)")
-    print("2. View all students (Read)")
-    print("3. Update student (Update)")
-    print("4. Delete student (Delete)")
+    print("\n1. Add student")
+    print("2. View all students")
+    print("3. Update student")
+    print("4. Delete student")
     print("5. View Result")
     print("6. Exit")
 
