@@ -1,0 +1,23 @@
+Byte-compiled / optimized
+
+pycache/ .py[cod] $py.class
+
+Virtual environments
+
+venv/ env/ ENV/
+
+Distribution / packaging
+
+build/ dist/ *.egg-info/
+
+Logs
+
+*.log
+
+VS Code
+
+.vscode/
+
+MacOS
+
+.DS_Store
