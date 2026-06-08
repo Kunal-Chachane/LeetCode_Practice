@@ -6,7 +6,7 @@ while True:
     if len(nums) == stop:
         break
 
-    def sortColors( nums):
+    def sortColors(nums):
         n = len(nums)
         for i in range(n):
             min_index = i
@@ -16,3 +16,5 @@ while True:
             nums[i], nums[min_index] = nums[min_index], nums[i]
 
         return nums
+    
+print(sortColors(nums))
