@@ -31,4 +31,16 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+## Hash Table
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+## String
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Backtracking
+|  |
+| ------- |
+| [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
 <!---LeetCode Topics End-->
