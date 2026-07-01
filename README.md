@@ -7,6 +7,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
+| [0027-remove-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
@@ -58,6 +59,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Two Pointers
 |  |
 | ------- |
+| [0027-remove-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 ## String Matching
 |  |
