@@ -49,6 +49,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0020-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
 ## Backtracking
@@ -79,4 +80,8 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
