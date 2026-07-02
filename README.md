@@ -13,12 +13,14 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 ## Binary Search
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 ## Divide and Conquer
 |  |
 | ------- |
