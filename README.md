@@ -15,6 +15,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 ## Binary Search
 |  |
@@ -77,4 +78,5 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
+| [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 <!---LeetCode Topics End-->
