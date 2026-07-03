@@ -90,9 +90,14 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Linked List
 |  |
 | ------- |
+| [0206-reverse-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
 ## Simulation
 |  |
 | ------- |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
