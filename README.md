@@ -12,6 +12,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
+| [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
@@ -57,6 +58,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 ## Math
 |  |
 | ------- |
@@ -80,6 +82,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
