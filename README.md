@@ -49,6 +49,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 ## String
 |  |
@@ -80,6 +81,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0005-longest-palindromic-substring](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0005-longest-palindromic-substring) |
 | [0027-remove-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
 ## String Matching
 |  |
@@ -99,6 +101,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Linked List
 |  |
 | ------- |
+| [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0206-reverse-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0206-reverse-linked-list) |
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
 ## Simulation
