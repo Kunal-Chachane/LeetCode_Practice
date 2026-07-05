@@ -61,6 +61,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
+| [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Backtracking
 |  |
 | ------- |
@@ -100,6 +101,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0020-valid-parentheses) |
+| [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Linked List
 |  |
 | ------- |
@@ -111,6 +113,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
+| [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Recursion
 |  |
 | ------- |
