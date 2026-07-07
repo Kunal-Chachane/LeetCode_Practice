@@ -65,6 +65,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
+| [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Backtracking
 |  |
@@ -77,6 +78,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
+| [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 ## Matrix
 |  |
 | ------- |
@@ -137,4 +139,5 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
+| [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 <!---LeetCode Topics End-->
