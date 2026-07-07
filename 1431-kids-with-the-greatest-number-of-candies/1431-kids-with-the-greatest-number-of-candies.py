@@ -7,5 +7,4 @@ class Solution(object):
                 answer.append(True)
             else:
                 answer.append(False)
-
         return answer
