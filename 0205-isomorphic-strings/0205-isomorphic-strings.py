@@ -2,7 +2,6 @@ class Solution(object):
     def isIsomorphic(self, s, t):
         mapST = {}
         mapTS = {}
-
         for i in range(len(s)):
             if s[i] in mapST:
                 if mapST[s[i]] != t[i]:
