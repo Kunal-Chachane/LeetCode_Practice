@@ -13,6 +13,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
+| [0074-search-a-2d-matrix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
@@ -28,6 +29,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0074-search-a-2d-matrix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0074-search-a-2d-matrix) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 ## Divide and Conquer
 |  |
@@ -79,6 +81,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
+| [0074-search-a-2d-matrix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0074-search-a-2d-matrix) |
 ## Two Pointers
 |  |
 | ------- |
