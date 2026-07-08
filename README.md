@@ -43,6 +43,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 ## Heap (Priority Queue)
 |  |
@@ -59,6 +60,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
+| [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 ## String
 |  |
@@ -70,6 +72,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
+| [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
