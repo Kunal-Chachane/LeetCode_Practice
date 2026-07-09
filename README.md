@@ -87,6 +87,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
+| [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 ## Matrix
@@ -150,6 +151,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0005-longest-palindromic-substring) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
+| [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 ## Greedy
 |  |
 | ------- |
@@ -159,4 +161,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
