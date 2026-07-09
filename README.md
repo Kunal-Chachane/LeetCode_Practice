@@ -122,6 +122,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Linked List
 |  |
@@ -154,4 +155,8 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
