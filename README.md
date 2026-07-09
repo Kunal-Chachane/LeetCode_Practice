@@ -23,6 +23,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
+| [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 ## Binary Search
@@ -152,6 +153,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0005-longest-palindromic-substring](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0005-longest-palindromic-substring) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
+| [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
 ## Greedy
 |  |
 | ------- |
