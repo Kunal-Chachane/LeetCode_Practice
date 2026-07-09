@@ -167,4 +167,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
+## Graph Theory
+|  |
+| ------- |
+| [1791-find-center-of-star-graph](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1791-find-center-of-star-graph) |
 <!---LeetCode Topics End-->
