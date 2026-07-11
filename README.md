@@ -42,6 +42,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
+| [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 ## Sorting
 |  |
@@ -52,6 +53,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 ## Quickselect
 |  |
@@ -142,6 +144,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0021-merge-two-sorted-lists) |
+| [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0061-rotate-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0061-rotate-list) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0083-remove-duplicates-from-sorted-list) |
 | [0092-reverse-linked-list-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0092-reverse-linked-list-ii) |
@@ -195,4 +198,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
+## Merge Sort
+|  |
+| ------- |
+| [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 <!---LeetCode Topics End-->
