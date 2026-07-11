@@ -142,6 +142,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0021-merge-two-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0021-merge-two-sorted-lists) |
 | [0061-rotate-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0061-rotate-list) |
 | [0083-remove-duplicates-from-sorted-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0083-remove-duplicates-from-sorted-list) |
+| [0092-reverse-linked-list-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
 | [0206-reverse-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0206-reverse-linked-list) |
