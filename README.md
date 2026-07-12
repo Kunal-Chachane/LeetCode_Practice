@@ -136,6 +136,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0020-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0020-valid-parentheses) |
 | [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
+| [0225-implement-stack-using-queues](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0225-implement-stack-using-queues) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
@@ -181,6 +182,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
+| [0225-implement-stack-using-queues](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0225-implement-stack-using-queues) |
 ## Memoization
 |  |
 | ------- |
@@ -197,6 +199,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Queue
 |  |
 | ------- |
+| [0225-implement-stack-using-queues](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0225-implement-stack-using-queues) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 ## Merge Sort
 |  |
