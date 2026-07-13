@@ -102,6 +102,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
+| [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 ## Matrix
@@ -162,6 +163,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
+| [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Recursion
