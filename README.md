@@ -26,6 +26,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
+| [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
@@ -141,6 +142,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0225-implement-stack-using-queues) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
+| [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 ## Linked List
@@ -163,6 +165,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
+| [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
