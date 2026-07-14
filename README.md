@@ -85,6 +85,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
+| [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
@@ -123,6 +124,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
+| [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
 ## String Matching
 |  |
 | ------- |
