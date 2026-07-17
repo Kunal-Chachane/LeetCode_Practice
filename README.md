@@ -31,6 +31,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
@@ -245,4 +246,9 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
+## Prefix Sum
+|  |
+| ------- |
+| [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 <!---LeetCode Topics End-->
