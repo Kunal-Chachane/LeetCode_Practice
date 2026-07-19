@@ -30,6 +30,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
+| [0860-lemonade-change](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0860-lemonade-change) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
@@ -215,6 +216,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
+| [0860-lemonade-change](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0860-lemonade-change) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 ## Design
