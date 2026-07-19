@@ -29,6 +29,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
+| [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
@@ -66,6 +67,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
+| [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 ## Heap (Priority Queue)
 |  |
@@ -218,6 +220,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0118-pascals-triangle) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
+| [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
 | [0746-min-cost-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0746-min-cost-climbing-stairs) |
 ## Greedy
 |  |
@@ -226,6 +229,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
+| [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
 | [0860-lemonade-change](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0860-lemonade-change) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
