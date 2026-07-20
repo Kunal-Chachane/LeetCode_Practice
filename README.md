@@ -284,4 +284,20 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
+## Tree
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 <!---LeetCode Topics End-->
