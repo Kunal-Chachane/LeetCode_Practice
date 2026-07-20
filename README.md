@@ -7,6 +7,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
+| [0011-container-with-most-water](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0011-container-with-most-water) |
 | [0027-remove-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
@@ -142,6 +143,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0005-longest-palindromic-substring) |
+| [0011-container-with-most-water](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0011-container-with-most-water) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0027-remove-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0027-remove-element) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
@@ -230,6 +232,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Greedy
 |  |
 | ------- |
+| [0011-container-with-most-water](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
