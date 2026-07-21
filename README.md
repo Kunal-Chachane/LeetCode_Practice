@@ -178,6 +178,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0232-implement-queue-using-stacks](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0234-palindrome-linked-list) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
+| [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
@@ -295,6 +296,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -302,6 +304,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 ## Breadth-First Search
 |  |
 | ------- |
