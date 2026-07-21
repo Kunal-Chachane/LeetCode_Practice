@@ -295,6 +295,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 ## Depth-First Search
@@ -303,6 +304,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 ## Breadth-First Search
@@ -317,5 +319,6 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
