@@ -298,6 +298,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
+| [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
 ## Depth-First Search
 |  |
@@ -308,6 +309,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
+| [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
 ## Breadth-First Search
 |  |
@@ -315,6 +317,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 ## Binary Tree
 |  |
 | ------- |
@@ -323,5 +326,6 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
 <!---LeetCode Topics End-->
