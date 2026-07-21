@@ -293,22 +293,26 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
+| [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 <!---LeetCode Topics End-->
