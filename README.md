@@ -25,6 +25,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
+| [0330-patching-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0330-patching-array) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -242,6 +243,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0011-container-with-most-water](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
+| [0330-patching-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0330-patching-array) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
