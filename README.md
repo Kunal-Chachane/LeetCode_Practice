@@ -100,6 +100,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
+| [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 ## String
 |  |
 | ------- |
@@ -122,6 +123,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
+| [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 ## Backtracking
 |  |
