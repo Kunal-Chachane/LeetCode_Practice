@@ -115,6 +115,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
+| [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1528-shuffle-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1528-shuffle-string) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
@@ -158,6 +159,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0234-palindrome-linked-list) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
+| [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
 | [1721-swapping-nodes-in-a-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1721-swapping-nodes-in-a-linked-list) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
@@ -186,6 +188,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
+| [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
@@ -214,6 +217,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
+| [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
