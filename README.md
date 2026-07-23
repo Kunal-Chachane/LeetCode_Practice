@@ -137,6 +137,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
+| [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
@@ -239,6 +240,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0045-jump-game-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
+| [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0118-pascals-triangle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0118-pascals-triangle) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
@@ -309,6 +311,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
@@ -342,6 +345,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0100-same-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0104-maximum-depth-of-binary-tree) |
@@ -350,4 +354,8 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 <!---LeetCode Topics End-->
