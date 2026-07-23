@@ -46,6 +46,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 | [2498-frog-jump-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2498-frog-jump-ii) |
+| [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Binary Search
@@ -58,6 +59,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 | [2498-frog-jump-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2498-frog-jump-ii) |
+| [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -100,6 +102,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
+| [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 | [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 ## String
 |  |
@@ -166,6 +169,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0876-middle-of-the-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0876-middle-of-the-linked-list) |
 | [1721-swapping-nodes-in-a-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1721-swapping-nodes-in-a-linked-list) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
+| [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 ## String Matching
 |  |
 | ------- |
