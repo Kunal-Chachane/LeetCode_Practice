@@ -134,6 +134,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 | [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
+| [3794-reverse-string-prefix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3794-reverse-string-prefix) |
 ## Backtracking
 |  |
 | ------- |
@@ -176,6 +177,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1721-swapping-nodes-in-a-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1721-swapping-nodes-in-a-linked-list) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
+| [3794-reverse-string-prefix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3794-reverse-string-prefix) |
 ## String Matching
 |  |
 | ------- |
