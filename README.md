@@ -106,6 +106,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
+| [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 | [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 ## String
@@ -125,6 +126,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
+| [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [1528-shuffle-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1528-shuffle-string) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
@@ -290,6 +292,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
+| [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 ## Queue
 |  |
