@@ -129,6 +129,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0032-longest-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0032-longest-valid-parentheses) |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
+| [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
@@ -158,6 +159,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0066-plus-one](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0066-plus-one) |
+| [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
@@ -200,6 +202,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
@@ -246,6 +249,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
+| [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
