@@ -78,6 +78,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
+| [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -109,6 +110,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
@@ -135,6 +137,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
@@ -210,6 +213,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
+| [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 ## Stack
 |  |
 | ------- |
