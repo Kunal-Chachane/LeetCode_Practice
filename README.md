@@ -155,6 +155,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Math
 |  |
 | ------- |
+| [0009-palindrome-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0012-integer-to-roman) |
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
