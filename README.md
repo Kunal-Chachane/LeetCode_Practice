@@ -107,6 +107,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
+| [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
@@ -132,6 +133,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
+| [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
@@ -316,6 +318,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Counting
 |  |
 | ------- |
+| [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
