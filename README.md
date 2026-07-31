@@ -81,6 +81,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
@@ -92,6 +93,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 ## Quickselect
 |  |
@@ -112,6 +114,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
@@ -139,6 +142,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
@@ -324,6 +328,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
@@ -406,4 +411,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
+## Bucket Sort
+|  |
+| ------- |
+| [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 <!---LeetCode Topics End-->
