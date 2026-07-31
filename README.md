@@ -59,6 +59,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
+| [3769-sort-integers-by-binary-reflection](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3861-minimum-capacity-box](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3861-minimum-capacity-box) |
 ## Binary Search
 |  |
@@ -100,6 +101,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
 | [2545-sort-the-students-by-their-kth-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2545-sort-the-students-by-their-kth-score) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
+| [3769-sort-integers-by-binary-reflection](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3769-sort-integers-by-binary-reflection) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
