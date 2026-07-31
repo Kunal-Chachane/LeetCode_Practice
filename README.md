@@ -45,6 +45,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1528-shuffle-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1528-shuffle-string) |
+| [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
@@ -88,6 +89,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
 | [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
+| [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
@@ -124,6 +126,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
 | [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
+| [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
