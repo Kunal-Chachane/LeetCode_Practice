@@ -52,6 +52,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
 | [2498-frog-jump-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2498-frog-jump-ii) |
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
+| [2545-sort-the-students-by-their-kth-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2545-sort-the-students-by-their-kth-score) |
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
@@ -93,6 +94,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
+| [2545-sort-the-students-by-their-kth-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2545-sort-the-students-by-their-kth-score) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 ## Heap (Priority Queue)
 |  |
@@ -193,6 +195,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0074-search-a-2d-matrix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0074-search-a-2d-matrix) |
+| [2545-sort-the-students-by-their-kth-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2545-sort-the-students-by-their-kth-score) |
 ## Two Pointers
 |  |
 | ------- |
