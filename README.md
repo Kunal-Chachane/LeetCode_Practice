@@ -46,6 +46,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
+| [1441-build-an-array-with-stack-operations](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1441-build-an-array-with-stack-operations) |
 | [1528-shuffle-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1528-shuffle-string) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
@@ -255,6 +256,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
+| [1441-build-an-array-with-stack-operations](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1441-build-an-array-with-stack-operations) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
@@ -286,6 +288,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0735-asteroid-collision](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0735-asteroid-collision) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
+| [1441-build-an-array-with-stack-operations](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1441-build-an-array-with-stack-operations) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
