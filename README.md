@@ -41,6 +41,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0896-monotonic-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0896-monotonic-array) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
 | [0946-validate-stack-sequences](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0946-validate-stack-sequences) |
+| [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1528-shuffle-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1528-shuffle-string) |
@@ -86,6 +87,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
+| [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
@@ -120,6 +122,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0817-linked-list-components](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0817-linked-list-components) |
 | [0904-fruit-into-baskets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0904-fruit-into-baskets) |
+| [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
@@ -419,4 +422,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
+## Counting Sort
+|  |
+| ------- |
+| [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 <!---LeetCode Topics End-->
