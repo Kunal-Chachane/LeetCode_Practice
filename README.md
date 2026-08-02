@@ -248,6 +248,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0032-longest-valid-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0032-longest-valid-parentheses) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0094-binary-tree-inorder-traversal) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0145-binary-tree-postorder-traversal) |
 | [0155-min-stack](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0155-min-stack) |
 | [0225-implement-stack-using-queues](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0232-implement-queue-using-stacks) |
@@ -395,6 +396,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0145-binary-tree-postorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
@@ -408,6 +410,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0145-binary-tree-postorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
@@ -431,6 +434,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0110-balanced-binary-tree](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0110-balanced-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0144-binary-tree-preorder-traversal) |
+| [0145-binary-tree-postorder-traversal](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0145-binary-tree-postorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0617-merge-two-binary-trees) |
 | [0872-leaf-similar-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0872-leaf-similar-trees) |
 ## Binary Search Tree
