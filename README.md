@@ -31,6 +31,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
+| [0485-max-consecutive-ones](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0496-next-greater-element-i) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0540-single-element-in-a-sorted-array) |
 | [0646-maximum-length-of-pair-chain](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0646-maximum-length-of-pair-chain) |
