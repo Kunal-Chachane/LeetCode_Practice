@@ -24,6 +24,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0118-pascals-triangle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
+| [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0198-house-robber) |
@@ -94,6 +95,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Sorting
 |  |
 | ------- |
+| [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
@@ -470,6 +472,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Bucket Sort
 |  |
 | ------- |
+| [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 ## Counting Sort
 |  |
@@ -479,4 +482,12 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
+## Radix Sort
+|  |
+| ------- |
+| [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
 <!---LeetCode Topics End-->
