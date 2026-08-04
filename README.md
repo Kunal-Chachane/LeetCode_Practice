@@ -203,6 +203,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0070-climbing-stairs](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0096-unique-binary-search-trees) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
+| [0263-ugly-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0263-ugly-number) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
