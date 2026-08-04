@@ -63,6 +63,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
+| [3379-transformed-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3379-transformed-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 | [3769-sort-integers-by-binary-reflection](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3769-sort-integers-by-binary-reflection) |
 | [3861-minimum-capacity-box](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3861-minimum-capacity-box) |
@@ -307,6 +308,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
+| [3379-transformed-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3379-transformed-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Recursion
 |  |
