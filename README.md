@@ -24,6 +24,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0118-pascals-triangle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0198-house-robber) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
@@ -86,12 +87,14 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Sorting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
@@ -132,6 +135,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0041-first-missing-positive](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0041-first-missing-positive) |
 | [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
@@ -374,6 +378,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
@@ -470,4 +475,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
