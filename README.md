@@ -32,6 +32,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
 | [0330-patching-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0330-patching-array) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0452-minimum-number-of-arrows-to-burst-balloons) |
@@ -91,6 +92,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Sorting
 |  |
@@ -100,6 +102,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0435-non-overlapping-intervals](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0442-find-all-duplicates-in-an-array) |
@@ -122,12 +125,14 @@ A structured repository of Python practice problems, examples, and experimental 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 ## Quickselect
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
 |  |
 | ------- |
@@ -141,6 +146,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
@@ -381,6 +387,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0387-first-unique-character-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
@@ -473,6 +480,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
+| [0347-top-k-frequent-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 ## Counting Sort
 |  |
