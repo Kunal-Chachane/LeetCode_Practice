@@ -185,6 +185,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
 | [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
+| [3340-check-balanced-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3340-check-balanced-string) |
 | [3794-reverse-string-prefix](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3794-reverse-string-prefix) |
 ## Backtracking
 |  |
