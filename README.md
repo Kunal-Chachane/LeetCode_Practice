@@ -205,6 +205,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0263-ugly-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0263-ugly-number) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
+| [0342-power-of-four](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0342-power-of-four) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [1518-water-bottles](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1518-water-bottles) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
@@ -255,6 +256,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0190-reverse-bits](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0190-reverse-bits) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
+| [0342-power-of-four](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0342-power-of-four) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 ## Stack
 |  |
@@ -321,6 +323,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0203-remove-linked-list-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0234-palindrome-linked-list) |
+| [0342-power-of-four](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0342-power-of-four) |
 ## Dynamic Programming
 |  |
 | ------- |
