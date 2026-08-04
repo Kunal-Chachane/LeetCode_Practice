@@ -85,6 +85,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0004-median-of-two-sorted-arrays](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0053-maximum-subarray) |
+| [0190-reverse-bits](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
 | [3653-xor-after-range-multiplication-queries-i](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3653-xor-after-range-multiplication-queries-i) |
 ## Sorting
@@ -249,6 +250,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
+| [0190-reverse-bits](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0190-reverse-bits) |
 | [0260-single-number-iii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0260-single-number-iii) |
 | [0268-missing-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0268-missing-number) |
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
