@@ -59,6 +59,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
+| [2404-most-frequent-even-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2404-most-frequent-even-element) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
 | [2498-frog-jump-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2498-frog-jump-ii) |
@@ -158,6 +159,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1122-relative-sort-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1122-relative-sort-array) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
+| [2404-most-frequent-even-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2404-most-frequent-even-element) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2465-number-of-distinct-averages](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2465-number-of-distinct-averages) |
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
@@ -395,6 +397,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1370-increasing-decreasing-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1370-increasing-decreasing-string) |
+| [2404-most-frequent-even-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2404-most-frequent-even-element) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
 ## Queue
 |  |
