@@ -163,6 +163,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
 | [2716-minimize-string-length](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2716-minimize-string-length) |
+| [3945-digit-frequency-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3945-digit-frequency-score) |
 ## String
 |  |
 | ------- |
@@ -224,6 +225,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
 | [3084-count-substrings-starting-and-ending-with-given-character](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3084-count-substrings-starting-and-ending-with-given-character) |
+| [3945-digit-frequency-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3945-digit-frequency-score) |
 ## Matrix
 |  |
 | ------- |
