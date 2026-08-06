@@ -58,6 +58,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1636-sort-array-by-increasing-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1710-maximum-units-on-a-truck](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1710-maximum-units-on-a-truck) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1752-check-if-array-is-sorted-and-rotated) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2239-find-closest-number-to-zero](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2239-find-closest-number-to-zero) |
 | [2404-most-frequent-even-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2404-most-frequent-even-element) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
@@ -195,6 +196,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1768-merge-strings-alternately](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1768-merge-strings-alternately) |
 | [1903-largest-odd-number-in-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1903-largest-odd-number-in-string) |
+| [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2390-removing-stars-from-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2390-removing-stars-from-a-string) |
 | [2418-sort-the-people](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2418-sort-the-people) |
 | [2696-minimum-string-length-after-removing-substrings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2696-minimum-string-length-after-removing-substrings) |
