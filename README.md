@@ -180,6 +180,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0043-multiply-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0043-multiply-strings) |
 | [0058-length-of-last-word](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0067-add-binary) |
+| [0165-compare-version-numbers](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0165-compare-version-numbers) |
 | [0205-isomorphic-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0383-ransom-note) |
@@ -248,6 +249,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
+| [0165-compare-version-numbers](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0165-compare-version-numbers) |
 | [0189-rotate-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0234-palindrome-linked-list) |
 | [0455-assign-cookies](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0455-assign-cookies) |
