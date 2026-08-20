@@ -507,4 +507,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
+## Database
+|  |
+| ------- |
+| [0175-combine-two-tables](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0175-combine-two-tables) |
 <!---LeetCode Topics End-->
