@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>LeetCode Practice — Kunal Chachane</title>
+  <meta
+    name="description"
+    content="Kunal Chachane's LeetCode problem-solving journey."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Prism -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+  />
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --bg-soft: #101318;
+      --surface: #14181e;
+      --surface-hover: #181d24;
+      --border: #252b33;
+      --border-light: #303741;
+
+      --text: #f0f3f6;
+      --text-secondary: #a7b0bb;
+      --text-muted: #6f7884;
+
+      --accent: #6ea8fe;
+      --accent-soft: rgba(110, 168, 254, 0.12);
+
+      --easy: #3fb950;
+      --easy-soft: rgba(63, 185, 80, 0.12);
+
+      --medium: #d29922;
+      --medium-soft: rgba(210, 153, 34, 0.12);
+
+      --hard: #f85149;
+      --hard-soft: rgba(248, 81, 73, 0.12);
+
+      --radius: 14px;
+      --radius-small: 9px;
+
+      --shadow: 0 10px 35px rgba(0, 0, 0, 0.18);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: rgba(110, 168, 254, 0.3);
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      height: 70px;
+
+      background: rgba(11, 13, 16, 0.92);
+      backdrop-filter: blur(14px);
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      height: 100%;
+      margin: auto;
+      padding: 0 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 700;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+
+      display: grid;
+      place-items: center;
+
+      border: 1px solid var(--border-light);
+      border-radius: 9px;
+
+      background: var(--surface);
+
+      font-family: "JetBrains Mono", monospace;
+      font-size: 14px;
+      color: var(--accent);
+    }
+
+    .brand-name {
+      font-size: 15px;
+      letter-spacing: -0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .nav-link {
+      padding: 8px 12px;
+
+      border-radius: 7px;
+
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 500;
+
+      transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--text);
+      background: var(--surface);
+    }
+
+    .github-link {
+      border: 1px solid var(--border-light);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    /* =========================
+       PAGE
+    ========================= */
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: auto;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 78px 0 48px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      margin-bottom: 18px;
+
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.1px;
+      text-transform: uppercase;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+
+      background: var(--easy);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.05;
+      letter-spacing: -2.8px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: var(--text-secondary);
+    }
+
+    .hero-description {
+      max-width: 650px;
+
+      color: var(--text-secondary);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      padding: 10px 15px;
+
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+
+      font-size: 13px;
+      font-weight: 600;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--text);
+      color: #0b0d10;
+      border-color: var(--text);
+    }
+
+    .btn-primary:hover {
+      background: #ffffff;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover {
+      background: var(--surface-hover);
+      border-color: #3a424d;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: 1.35fr repeat(3, 1fr);
+      gap: 12px;
+
+      margin-bottom: 52px;
+    }
+
+    .stat-card {
+      position: relative;
+
+      min-height: 130px;
+      padding: 22px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+
+      transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-light);
+      transform: translateY(-2px);
+    }
+
+    .stat-card-main {
+      background: #151a21;
+    }
+
+    .stat-label {
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+    }
+
+    .stat-number {
+      margin-top: 8px;
+
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+    }
+
+    .stat-description {
+      margin-top: 3px;
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* =========================
+       SECTION HEADER
+    ========================= */
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 23px;
+      letter-spacing: -0.6px;
+    }
+
+    .section-subtitle {
+      margin-top: 4px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    #resultCount {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       FILTER BAR
+    ========================= */
+
+    .filter-box {
+      padding: 14px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+
+      margin-bottom: 14px;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .search-wrapper {
+      position: relative;
+      flex: 1;
+      min-width: 230px;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 13px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      color: var(--text-muted);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    .search-input {
+      width: 100%;
+      height: 42px;
+
+      padding: 0 14px 0 38px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-small);
+
+      outline: none;
+
+      background: var(--bg-soft);
+      color: var(--text);
+
+      font-size: 13px;
+
+      transition: border-color 0.2s ease;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .search-input:focus {
+      border-color: #46698f;
+    }
+
+    .select {
+      height: 42px;
+
+      padding: 0 34px 0 13px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius-small);
+
+      outline: none;
+
+      background: var(--bg-soft);
+      color: var(--text);
+
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    /* =========================
+       LANGUAGE FILTERS
+    ========================= */
+
+    .language-filters {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+
+      margin-top: 11px;
+      padding-top: 11px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .filter-button {
+      padding: 6px 10px;
+
+      border: 1px solid var(--border);
+      border-radius: 7px;
+
+      background: transparent;
+      color: var(--text-muted);
+
+      font-size: 12px;
+      font-weight: 500;
+
+      transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .filter-button:hover {
+      color: var(--text);
+      background: var(--bg-soft);
+    }
+
+    .filter-button.active {
+      color: var(--text);
+      background: var(--accent-soft);
+      border-color: rgba(110, 168, 254, 0.3);
+    }
+
+    /* =========================
+       PROBLEM LIST
+    ========================= */
+
+    .problem-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .problem-card {
+      display: grid;
+      grid-template-columns: 68px 1fr auto;
+
+      align-items: center;
+      gap: 18px;
+
+      min-height: 82px;
+      padding: 15px 18px;
+
+      border: 1px solid var(--border);
+      border-radius: 11px;
+
+      background: var(--surface);
+
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .problem-card:hover {
+      background: var(--surface-hover);
+      border-color: #343c46;
+      transform: translateX(2px);
+    }
+
+    .problem-number {
+      color: var(--text-muted);
+
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .problem-info {
+      min-width: 0;
+    }
+
+    .problem-title {
+      margin-bottom: 5px;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .problem-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex-wrap: wrap;
+
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .meta-dot {
+      width: 3px;
+      height: 3px;
+
+      background: var(--text-muted);
+      border-radius: 50%;
+    }
+
+    .problem-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .difficulty {
+      min-width: 65px;
+
+      padding: 5px 8px;
+
+      border-radius: 6px;
+
+      text-align: center;
+
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .difficulty-Easy {
+      color: var(--easy);
+      background: var(--easy-soft);
+    }
+
+    .difficulty-Medium {
+      color: var(--medium);
+      background: var(--medium-soft);
+    }
+
+    .difficulty-Hard {
+      color: var(--hard);
+      background: var(--hard-soft);
+    }
+
+    .view-button {
+      padding: 7px 10px;
+
+      border: 1px solid var(--border-light);
+      border-radius: 7px;
+
+      background: transparent;
+      color: var(--text-secondary);
+
+      font-size: 11px;
+      font-weight: 600;
+
+      transition:
+        color 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .view-button:hover {
+      color: var(--text);
+      background: var(--bg-soft);
+    }
+
+    /* =========================
+       EMPTY / LOADING
+    ========================= */
+
+    .state-box {
+      padding: 60px 20px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+
+      text-align: center;
+    }
+
+    .state-title {
+      margin-bottom: 6px;
+
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .state-text {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .loader {
+      width: 22px;
+      height: 22px;
+
+      margin: 0 auto 14px;
+
+      border: 2px solid var(--border-light);
+      border-top-color: var(--accent);
+
+      border-radius: 50%;
+
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* =========================
+       MODAL
+    ========================= */
+
+    .modal {
+      position: fixed;
+      inset: 0;
+
+      z-index: 1000;
+
+      display: none;
+
+      padding: 30px 18px;
+
+      background: rgba(0, 0, 0, 0.72);
+
+      backdrop-filter: blur(8px);
+
+      overflow-y: auto;
+    }
+
+    .modal.active {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .modal-content {
+      width: min(1000px, 100%);
+
+      margin: 30px auto;
+
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+
+      background: #0d1014;
+
+      box-shadow: var(--shadow);
+
+      overflow: hidden;
+
+      animation: modalIn 0.2s ease;
+    }
+
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .modal-header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+
+      padding: 18px 22px;
+
+      border-bottom: 1px solid var(--border);
+
+      background: rgba(13, 16, 20, 0.95);
+
+      backdrop-filter: blur(12px);
+    }
+
+    .modal-problem-number {
+      color: var(--accent);
+
+      font-family: "JetBrains Mono", monospace;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      letter-spacing: -0.4px;
+    }
+
+    .close-button {
+      width: 34px;
+      height: 34px;
+
+      border: 1px solid var(--border);
+      border-radius: 8px;
+
+      background: var(--surface);
+      color: var(--text-secondary);
+
+      font-size: 19px;
+
+      transition: background 0.2s ease;
+    }
+
+    .close-button:hover {
+      background: var(--surface-hover);
+      color: var(--text);
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .modal-tags {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      margin-bottom: 25px;
+    }
+
+    .tag {
+      padding: 5px 9px;
+
+      border: 1px solid var(--border);
+      border-radius: 6px;
+
+      background: var(--surface);
+
+      color: var(--text-secondary);
+
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .modal-section {
+      margin-top: 25px;
+    }
+
+    .modal-section:first-child {
+      margin-top: 0;
+    }
+
+    .modal-section-title {
+      margin-bottom: 10px;
+
+      font-size: 13px;
+      font-weight: 700;
+
+      color: var(--text-secondary);
+    }
+
+    .readme-content {
+      padding: 18px;
+
+      border: 1px solid var(--border);
+      border-radius: 10px;
+
+      background: var(--surface);
+
+      color: #c9d1d9;
+
+      font-size: 13px;
+      line-height: 1.75;
+
+      white-space: pre-wrap;
+
+      overflow-x: auto;
+    }
+
+    .code-wrapper {
+      position: relative;
+
+      border: 1px solid var(--border);
+      border-radius: 10px;
+
+      overflow: hidden;
+
+      background: #0b0d10;
+    }
+
+    .code-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 9px 13px;
+
+      border-bottom: 1px solid var(--border);
+
+      background: #11151a;
+    }
+
+    .code-language {
+      color: var(--text-muted);
+
+      font-family: "JetBrains Mono", monospace;
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .copy-button {
+      padding: 5px 8px;
+
+      border: 1px solid var(--border);
+      border-radius: 6px;
+
+      background: transparent;
+      color: var(--text-secondary);
+
+      font-size: 10px;
+    }
+
+    .copy-button:hover {
+      color: var(--text);
+      background: var(--surface);
+    }
+
+    pre[class*="language-"] {
+      margin: 0 !important;
+      max-height: 600px;
+
+      background: #0b0d10 !important;
+
+      font-family: "JetBrains Mono", monospace !important;
+      font-size: 12px !important;
+      line-height: 1.7 !important;
+    }
+
+    .modal-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+
+      margin-top: 25px;
+      padding-top: 20px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .source-link {
+      color: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .leetcode-button {
+      padding: 9px 13px;
+
+      border: 1px solid var(--border-light);
+      border-radius: 7px;
+
+      background: var(--surface);
+      color: var(--text);
+
+      font-size: 12px;
+      font-weight: 600;
+
+      transition: background 0.2s ease;
+    }
+
+    .leetcode-button:hover {
+      background: var(--surface-hover);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      margin-top: 70px;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      min-height: 90px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      color: var(--text-muted);
+
+      font-size: 12px;
+    }
+
+    .footer-brand {
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 850px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .problem-card {
+        grid-template-columns: 55px 1fr;
+      }
+
+      .problem-actions {
+        grid-column: 2;
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .container {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .navbar {
+        height: 62px;
+      }
+
+      .nav-inner {
+        padding: 0 15px;
+      }
+
+      .nav-links .nav-link:not(.github-link) {
+        display: none;
+      }
+
+      .hero {
+        padding: 55px 0 35px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1.8px;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stat-card {
+        min-height: 110px;
+        padding: 17px;
+      }
+
+      .stat-number {
+        font-size: 28px;
+      }
+
+      .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .problem-card {
+        grid-template-columns: 1fr;
+        gap: 9px;
+      }
+
+      .problem-actions {
+        grid-column: auto;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .modal {
+        padding: 0;
+      }
+
+      .modal-content {
+        min-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+      }
+
+      .modal-header {
+        padding: 15px;
+      }
+
+      .modal-body {
+        padding: 16px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================= -->
+
+  <nav class="navbar">
+
+    <div class="nav-inner">
+
+      <a href="#" class="brand">
+
+        <div class="brand-mark">
+          &lt;/&gt;
+        </div>
+
+        <span class="brand-name">
+          Kunal Chachane
+        </span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#problems" class="nav-link">
+          Problems
+        </a>
+
+        <a
+          href="https://github.com/Kunal-Chachane/LeetCode_Practice"
+          target="_blank"
+          class="nav-link github-link"
+        >
+          GitHub ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================
+       MAIN
+  ========================= -->
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="hero container">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+
+          <span class="eyebrow-dot"></span>
+
+          Problem Solving Journey
+
+        </div>
+
+        <h1>
+          LeetCode
+          <span>Practice.</span>
+        </h1>
+
+        <p class="hero-description">
+          A curated collection of my algorithm, data structure,
+          database, and problem-solving practice. Every problem,
+          explanation, and solution is maintained in my GitHub
+          repository.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            href="#problems"
+            class="btn btn-primary"
+          >
+            Explore Problems
+          </a>
+
+          <a
+            href="https://github.com/Kunal-Chachane/LeetCode_Practice"
+            target="_blank"
+            class="btn btn-secondary"
+          >
+            View Repository ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="container">
+
+      <div class="stats-grid">
+
+        <div class="stat-card stat-card-main">
+
+          <div class="stat-label">
+            Total Solved
+          </div>
+
+          <div
+            class="stat-number"
+            id="totalProblems"
+          >
+            —
+          </div>
+
+          <div class="stat-description">
+            Problems in repository
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-label">
+            Easy
+          </div>
+
+          <div
+            class="stat-number easy"
+            id="easyProblems"
+          >
+            —
+          </div>
+
+          <div class="stat-description">
+            Foundation
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-label">
+            Medium
+          </div>
+
+          <div
+            class="stat-number medium"
+            id="mediumProblems"
+          >
+            —
+          </div>
+
+          <div class="stat-description">
+            Core problem solving
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-label">
+            Hard
+          </div>
+
+          <div
+            class="stat-number hard"
+            id="hardProblems"
+          >
+            —
+          </div>
+
+          <div class="stat-description">
+            Advanced challenges
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROBLEMS -->
+
+    <section
+      class="container"
+      id="problems"
+    >
+
+      <div class="section-header">
+
+        <div>
+
+          <h2 class="section-title">
+            Problems
+          </h2>
+
+          <p class="section-subtitle">
+            Browse the complete collection of solved problems.
+          </p>
+
+        </div>
+
+        <div id="resultCount">
+          Loading...
+        </div>
+
+      </div>
+
+
+      <!-- FILTERS -->
+
+      <div class="filter-box">
+
+        <div class="filter-row">
+
+          <div class="search-wrapper">
+
+            <span class="search-icon">
+              ⌕
+            </span>
+
+            <input
+              id="searchInput"
+              class="search-input"
+              type="search"
+              placeholder="Search by problem number or title..."
+            />
+
+          </div>
+
+
+          <select
+            id="difficultyFilter"
+            class="select"
+          >
+
+            <option value="all">
+              All difficulties
+            </option>
+
+            <option value="Easy">
+              Easy
+            </option>
+
+            <option value="Medium">
+              Medium
+            </option>
+
+            <option value="Hard">
+              Hard
+            </option>
+
+          </select>
+
+
+          <select
+            id="sortFilter"
+            class="select"
+          >
+
+            <option value="number">
+              Problem number
+            </option>
+
+            <option value="latest">
+              Latest first
+            </option>
+
+            <option value="title">
+              Title A–Z
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="language-filters">
+
+          <button
+            class="filter-button active"
+            data-language="all"
+          >
+            All
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="python"
+          >
+            Python
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="cpp"
+          >
+            C++
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="java"
+          >
+            Java
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="javascript"
+          >
+            JavaScript
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="sql"
+          >
+            SQL
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="c"
+          >
+            C
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="go"
+          >
+            Go
+          </button>
+
+          <button
+            class="filter-button"
+            data-language="ruby"
+          >
+            Ruby
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- PROBLEM LIST -->
+
+      <div
+        id="problemList"
+        class="problem-list"
+      >
+
+        <div class="state-box">
+
+          <div class="loader"></div>
+
+          <div class="state-title">
+            Loading problems
+          </div>
+
+          <div class="state-text">
+            Reading your GitHub repository...
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="footer-inner container">
+
+      <div class="footer-brand">
+        Kunal Chachane
+      </div>
+
+      <div>
+        Built with discipline, curiosity & code.
+      </div>
+
+      <a
+        href="https://github.com/Kunal-Chachane/LeetCode_Practice"
+        target="_blank"
+      >
+        GitHub ↗
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       PROBLEM MODAL
+  ========================= -->
+
+  <div
+    id="problemModal"
+    class="modal"
+  >
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <div>
+
+          <div
+            id="modalNumber"
+            class="modal-problem-number"
+          >
+            #0000
+          </div>
+
+          <h2
+            id="modalTitle"
+            class="modal-title"
+          >
+            Problem
+          </h2>
+
+        </div>
+
+
+        <button
+          id="closeModal"
+          class="close-button"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <div class="modal-body">
+
+        <div
+          id="modalTags"
+          class="modal-tags"
+        >
+        </div>
+
+
+        <!-- README -->
+
+        <div class="modal-section">
+
+          <div class="modal-section-title">
+            Problem
+          </div>
+
+          <div
+            id="readmeContent"
+            class="readme-content"
+          >
+            Loading...
+          </div>
+
+        </div>
+
+
+        <!-- SOLUTION -->
+
+        <div class="modal-section">
+
+          <div class="modal-section-title">
+            Solution
+          </div>
+
+          <div class="code-wrapper">
+
+            <div class="code-toolbar">
+
+              <span
+                id="codeLanguage"
+                class="code-language"
+              >
+                CODE
+              </span>
+
+              <button
+                id="copyCode"
+                class="copy-button"
+              >
+                Copy
+              </button>
+
+            </div>
+
+            <pre><code
+              id="solutionCode"
+              class="language-none"
+            >Loading...</code></pre>
+
+          </div>
+
+        </div>
+
+
+        <div class="modal-footer">
+
+          <div
+            id="sourcePath"
+            class="source-link"
+          >
+            GitHub repository
+          </div>
+
+          <a
+            id="leetcodeLink"
+            class="leetcode-button"
+            href="#"
+            target="_blank"
+          >
+            Open on LeetCode ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Prism Core -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+  <!-- Prism Languages -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-typescript.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-go.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+
+
+  <script>
+
+    /* ==========================================
+       GITHUB CONFIGURATION
+    ========================================== */
+
+    const OWNER = "Kunal-Chachane";
+    const REPO = "LeetCode_Practice";
+    const BRANCH = "main";
+
+    const API =
+      `https://api.github.com/repos/${OWNER}/${REPO}`;
+
+    const RAW =
+      `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}`;
+
+
+    /* ==========================================
+       LANGUAGE MAP
+    ========================================== */
+
+    const LANGUAGE_MAP = {
+
+      py: "python",
+
+      cpp: "cpp",
+      cc: "cpp",
+      cxx: "cpp",
+
+      java: "java",
+
+      js: "javascript",
+      jsx: "javascript",
+
+      ts: "typescript",
+
+      c: "c",
+      h: "c",
+
+      go: "go",
+
+      rb: "ruby",
+
+      sql: "sql"
+
+    };
+
+
+    let problems = [];
+
+    let selectedLanguage = "all";
+
+
+    /* ==========================================
+       DOM
+    ========================================== */
+
+    const problemList =
+      document.getElementById("problemList");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const difficultyFilter =
+      document.getElementById("difficultyFilter");
+
+    const sortFilter =
+      document.getElementById("sortFilter");
+
+    const resultCount =
+      document.getElementById("resultCount");
+
+    const modal =
+      document.getElementById("problemModal");
+
+    const closeModal =
+      document.getElementById("closeModal");
+
+    const solutionCode =
+      document.getElementById("solutionCode");
+
+    const copyCode =
+      document.getElementById("copyCode");
+
+
+    /* ==========================================
+       GITHUB TREE
+    ========================================== */
+
+    async function loadProblems() {
+
+      try {
+
+        const response = await fetch(
+          `${API}/git/trees/${BRANCH}?recursive=1`
+        );
+
+        if (!response.ok) {
+          throw new Error(
+            `GitHub returned ${response.status}`
+          );
+        }
+
+        const data = await response.json();
+
+
+        if (data.truncated) {
+          console.warn(
+            "GitHub tree response was truncated."
+          );
+        }
+
+
+        /*
+         * Detect directories:
+         *
+         * 0003-longest-substring...
+         * 0176-second-highest-salary
+         */
+
+        const folders = new Set();
+
+        data.tree.forEach(item => {
+
+          if (
+            item.type === "tree" &&
+            /^\d{4,5}-/.test(item.path)
+          ) {
+
+            folders.add(item.path);
+
+          }
+
+        });
+
+
+        const loaded = [];
+
+
+        for (const folder of folders) {
+
+          const match =
+            folder.match(/^(\d+)-(.+)$/);
+
+          if (!match) continue;
+
+
+          const number =
+            parseInt(match[1], 10);
+
+          const slug =
+            match[2];
+
+
+          /*
+           * Find files inside folder
+           */
+
+          const files =
+            data.tree.filter(item =>
+              item.path.startsWith(folder + "/") &&
+              item.type === "blob"
+            );
+
+
+          const readme =
+            files.find(item =>
+              /(^|\/)readme\.md$/i.test(item.path)
+            );
+
+
+          /*
+           * Pick solution file.
+           *
+           * README is excluded.
+           */
+
+          const solution =
+            files.find(item =>
+              !/readme\.md$/i.test(item.path)
+            );
+
+
+          const language =
+            solution
+              ? getLanguageFromPath(solution.path)
+              : "none";
+
+
+          /*
+           * Difficulty
+           */
+
+          let difficulty = "Medium";
+
+
+          /*
+           * Try to detect difficulty
+           * from README.
+           */
+
+          if (readme) {
+
+            try {
+
+              const readmeText =
+                await fetchText(readme.path);
+
+              difficulty =
+                detectDifficulty(readmeText);
+
+            } catch (error) {
+
+              console.warn(
+                "README could not be read:",
+                folder
+              );
+
+            }
+
+          }
+
+
+          loaded.push({
+
+            number,
+
+            slug,
+
+            folder,
+
+            readme:
+              readme?.path || null,
+
+            solution:
+              solution?.path || null,
+
+            language,
+
+            difficulty
+
+          });
+
+        }
+
+
+        problems =
+          loaded.sort(
+            (a, b) =>
+              a.number - b.number
+          );
+
+
+        updateStats();
+
+        renderProblems();
+
+
+      } catch (error) {
+
+        console.error(error);
+
+        problemList.innerHTML = `
+
+          <div class="state-box">
+
+            <div class="state-title">
+              Unable to load problems
+            </div>
+
+            <div class="state-text">
+              ${escapeHTML(error.message)}
+              <br><br>
+              Make sure the repository is public
+              and the branch is <strong>main</strong>.
+            </div>
+
+          </div>
+
+        `;
+
+      }
+
+    }
+
+
+    /* ==========================================
+       DIFFICULTY DETECTION
+    ========================================== */
+
+    function detectDifficulty(text) {
+
+      const lower =
+        text.toLowerCase();
+
+
+      /*
+       * Try explicit labels first.
+       */
+
+      if (
+        /\bdifficulty\s*[:\-]\s*easy\b/i.test(text) ||
+        /\beasy\b/.test(lower)
+      ) {
+
+        if (
+          !/\bdifficulty\s*[:\-]\s*(medium|hard)\b/i.test(text)
+        ) {
+          return "Easy";
+        }
+
+      }
+
+
+      if (
+        /\bdifficulty\s*[:\-]\s*hard\b/i.test(text)
+      ) {
+        return "Hard";
+      }
+
+
+      if (
+        /\bdifficulty\s*[:\-]\s*medium\b/i.test(text)
+      ) {
+        return "Medium";
+      }
+
+
+      /*
+       * Default.
+       */
+
+      return "Medium";
+
+    }
+
+
+    /* ==========================================
+       LANGUAGE
+    ========================================== */
+
+    function getLanguageFromPath(path) {
+
+      const extension =
+        path
+          .split(".")
+          .pop()
+          .toLowerCase();
+
+
+      return (
+        LANGUAGE_MAP[extension] ||
+        extension
+      );
+
+    }
+
+
+    /* ==========================================
+       FETCH RAW FILE
+    ========================================== */
+
+    async function fetchText(path) {
+
+      const response =
+        await fetch(
+          `${RAW}/${path
+            .split("/")
+            .map(encodeURIComponent)
+            .join("/")}`
+        );
+
+
+      if (!response.ok) {
+        throw new Error(
+          `Unable to load ${path}`
+        );
+      }
+
+
+      return response.text();
+
+    }
+
+
+    /* ==========================================
+       STATISTICS
+    ========================================== */
+
+    function updateStats() {
+
+      const easy =
+        problems.filter(
+          p => p.difficulty === "Easy"
+        ).length;
+
+
+      const medium =
+        problems.filter(
+          p => p.difficulty === "Medium"
+        ).length;
+
+
+      const hard =
+        problems.filter(
+          p => p.difficulty === "Hard"
+        ).length;
+
+
+      document.getElementById(
+        "totalProblems"
+      ).textContent =
+        problems.length;
+
+
+      document.getElementById(
+        "easyProblems"
+      ).textContent =
+        easy;
+
+
+      document.getElementById(
+        "mediumProblems"
+      ).textContent =
+        medium;
+
+
+      document.getElementById(
+        "hardProblems"
+      ).textContent =
+        hard;
+
+    }
+
+
+    /* ==========================================
+       RENDER
+    ========================================== */
+
+    function renderProblems() {
+
+      const search =
+        searchInput.value
+          .trim()
+          .toLowerCase();
+
+
+      const difficulty =
+        difficultyFilter.value;
+
+
+      let filtered =
+        problems.filter(problem => {
+
+          const title =
+            formatTitle(problem.slug)
+              .toLowerCase();
+
+
+          const number =
+            String(problem.number);
+
+
+          const matchesSearch =
+            !search ||
+            title.includes(search) ||
+            number.includes(search) ||
+            problem.slug.includes(search);
+
+
+          const matchesDifficulty =
+            difficulty === "all" ||
+            problem.difficulty === difficulty;
+
+
+          const matchesLanguage =
+            selectedLanguage === "all" ||
+            problem.language === selectedLanguage;
+
+
+          return (
+            matchesSearch &&
+            matchesDifficulty &&
+            matchesLanguage
+          );
+
+        });
+
+
+      /*
+       * Sorting
+       */
+
+      const sort =
+        sortFilter.value;
+
+
+      if (sort === "number") {
+
+        filtered.sort(
+          (a, b) =>
+            a.number - b.number
+        );
+
+      }
+
+
+      if (sort === "latest") {
+
+        filtered.sort(
+          (a, b) =>
+            b.number - a.number
+        );
+
+      }
+
+
+      if (sort === "title") {
+
+        filtered.sort(
+          (a, b) =>
+            formatTitle(a.slug)
+              .localeCompare(
+                formatTitle(b.slug)
+              )
+        );
+
+      }
+
+
+      resultCount.textContent =
+        `${filtered.length} problem${
+          filtered.length === 1
+            ? ""
+            : "s"
+        }`;
+
+
+      if (!filtered.length) {
+
+        problemList.innerHTML = `
+
+          <div class="state-box">
+
+            <div class="state-title">
+              No problems found
+            </div>
+
+            <div class="state-text">
+              Try changing your search or filters.
+            </div>
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+
+      problemList.innerHTML =
+        filtered
+          .map(problem => {
+
+            const title =
+              formatTitle(problem.slug);
+
+
+            const language =
+              prettyLanguage(
+                problem.language
+              );
+
+
+            return `
+
+              <article class="problem-card">
+
+                <div class="problem-number">
+                  #${String(problem.number).padStart(4, "0")}
+                </div>
+
+
+                <div class="problem-info">
+
+                  <div class="problem-title">
+                    ${escapeHTML(title)}
+                  </div>
+
+                  <div class="problem-meta">
+
+                    <span>
+                      ${escapeHTML(language)}
+                    </span>
+
+                    <span class="meta-dot"></span>
+
+                    <span>
+                      LeetCode
+                    </span>
+
+                  </div>
+
+                </div>
+
+
+                <div class="problem-actions">
+
+                  <span
+                    class="difficulty difficulty-${problem.difficulty}"
+                  >
+                    ${problem.difficulty}
+                  </span>
+
+                  <button
+                    class="view-button"
+                    onclick="openProblem('${escapeAttribute(problem.folder)}')"
+                  >
+                    View
+                  </button>
+
+                </div>
+
+              </article>
+
+            `;
+
+          })
+          .join("");
+
+    }
+
+
+    /* ==========================================
+       TITLE FORMATTER
+    ========================================== */
+
+    function formatTitle(slug) {
+
+      return slug
+        .split("-")
+        .map(word => {
+
+          if (!word) return "";
+
+          return (
+            word.charAt(0).toUpperCase() +
+            word.slice(1)
+          );
+
+        })
+        .join(" ");
+
+    }
+
+
+    /* ==========================================
+       LANGUAGE NAME
+    ========================================== */
+
+    function prettyLanguage(language) {
+
+      const names = {
+
+        python: "Python",
+
+        cpp: "C++",
+
+        java: "Java",
+
+        javascript: "JavaScript",
+
+        typescript: "TypeScript",
+
+        sql: "SQL",
+
+        c: "C",
+
+        go: "Go",
+
+        ruby: "Ruby",
+
+        none: "No solution"
+
+      };
+
+
+      return (
+        names[language] ||
+        language.toUpperCase()
+      );
+
+    }
+
+
+    /* ==========================================
+       OPEN PROBLEM
+    ========================================== */
+
+    async function openProblem(folder) {
+
+      const problem =
+        problems.find(
+          p => p.folder === folder
+        );
+
+
+      if (!problem) return;
+
+
+      const title =
+        formatTitle(problem.slug);
+
+
+      document.getElementById(
+        "modalNumber"
+      ).textContent =
+        `#${String(problem.number).padStart(4, "0")}`;
+
+
+      document.getElementById(
+        "modalTitle"
+      ).textContent =
+        title;
+
+
+      document.getElementById(
+        "modalTags"
+      ).innerHTML = `
+
+        <span class="tag">
+          ${escapeHTML(problem.difficulty)}
+        </span>
+
+        <span class="tag">
+          ${escapeHTML(
+            prettyLanguage(problem.language)
+          )}
+        </span>
+
+        <span class="tag">
+          LeetCode #${problem.number}
+        </span>
+
+      `;
+
+
+      document.getElementById(
+        "sourcePath"
+      ).textContent =
+        problem.solution
+          ? problem.solution
+          : "GitHub repository";
+
+
+      document.getElementById(
+        "leetcodeLink"
+      ).href =
+        `https://leetcode.com/problems/${problem.slug}/`;
+
+
+      /*
+       * Show modal
+       */
+
+      modal.classList.add("active");
+
+      document.body.classList.add(
+        "modal-open"
+      );
+
+
+      /*
+       * README
+       */
+
+      const readme =
+        document.getElementById(
+          "readmeContent"
+        );
+
+
+      readme.textContent =
+        "Loading problem description...";
+
+
+      if (problem.readme) {
+
+        try {
+
+          readme.textContent =
+            await fetchText(
+              problem.readme
+            );
+
+        } catch {
+
+          readme.textContent =
+            "Unable to load README.md.";
+
+        }
+
+      } else {
+
+        readme.textContent =
+          "No README.md found for this problem.";
+
+      }
+
+
+      /*
+       * Solution
+       */
+
+      solutionCode.textContent =
+        "Loading solution...";
+
+
+      solutionCode.className =
+        "language-none";
+
+
+      document.getElementById(
+        "codeLanguage"
+      ).textContent =
+        prettyLanguage(
+          problem.language
+        );
+
+
+      if (problem.solution) {
+
+        try {
+
+          const code =
+            await fetchText(
+              problem.solution
+            );
+
+
+          solutionCode.textContent =
+            code;
+
+
+          const prismLanguage =
+            problem.language === "none"
+              ? "none"
+              : problem.language;
+
+
+          solutionCode.className =
+            `language-${prismLanguage}`;
+
+
+          Prism.highlightElement(
+            solutionCode
+          );
+
+
+        } catch {
+
+          solutionCode.textContent =
+            "Unable to load solution.";
+
+        }
+
+      } else {
+
+        solutionCode.textContent =
+          "No solution file found.";
+
+      }
+
+    }
+
+
+    /* ==========================================
+       CLOSE MODAL
+    ========================================== */
+
+    function closeProblem() {
+
+      modal.classList.remove(
+        "active"
+      );
+
+      document.body.classList.remove(
+        "modal-open"
+      );
+
+    }
+
+
+    closeModal.addEventListener(
+      "click",
+      closeProblem
+    );
+
+
+    modal.addEventListener(
+      "click",
+      event => {
+
+        if (
+          event.target === modal
+        ) {
+
+          closeProblem();
+
+        }
+
+      }
+    );
+
+
+    document.addEventListener(
+      "keydown",
+      event => {
+
+        if (
+          event.key === "Escape" &&
+          modal.classList.contains("active")
+        ) {
+
+          closeProblem();
+
+        }
+
+      }
+    );
+
+
+    /* ==========================================
+       COPY SOLUTION
+    ========================================== */
+
+    copyCode.addEventListener(
+      "click",
+      async () => {
+
+        const code =
+          solutionCode.textContent;
+
+
+        try {
+
+          await navigator.clipboard.writeText(
+            code
+          );
+
+
+          copyCode.textContent =
+            "Copied";
+
+
+          setTimeout(
+            () => {
+              copyCode.textContent =
+                "Copy";
+            },
+            1500
+          );
+
+
+        } catch {
+
+          copyCode.textContent =
+            "Failed";
+
+        }
+
+      }
+    );
+
+
+    /* ==========================================
+       FILTER EVENTS
+    ========================================== */
+
+    searchInput.addEventListener(
+      "input",
+      renderProblems
+    );
+
+
+    difficultyFilter.addEventListener(
+      "change",
+      renderProblems
+    );
+
+
+    sortFilter.addEventListener(
+      "change",
+      renderProblems
+    );
+
+
+    document
+      .querySelectorAll(
+        ".filter-button"
+      )
+      .forEach(button => {
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            document
+              .querySelectorAll(
+                ".filter-button"
+              )
+              .forEach(btn =>
+                btn.classList.remove(
+                  "active"
+                )
+              );
+
+
+            button.classList.add(
+              "active"
+            );
+
+
+            selectedLanguage =
+              button.dataset.language;
+
+
+            renderProblems();
+
+          }
+        );
+
+      });
+
+
+    /* ==========================================
+       SECURITY HELPERS
+    ========================================== */
+
+    function escapeHTML(value) {
+
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
+    }
+
+
+    function escapeAttribute(value) {
+
+      return String(value)
+        .replaceAll("\\", "\\\\")
+        .replaceAll("'", "\\'");
+
+    }
+
+
+    /* ==========================================
+       START
+    ========================================== */
+
+    loadProblems();
+
+  </script>
+
+</body>
+</html>
