@@ -513,4 +513,5 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0175-combine-two-tables](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0175-combine-two-tables) |
 | [0176-second-highest-salary](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0176-second-highest-salary) |
 | [0178-rank-scores](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0178-rank-scores) |
+| [0185-department-top-three-salaries](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0185-department-top-three-salaries) |
 <!---LeetCode Topics End-->
