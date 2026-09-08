@@ -13,6 +13,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0041-first-missing-positive](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0041-first-missing-positive) |
 | [0045-jump-game-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0045-jump-game-ii) |
+| [0046-permutations](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0055-jump-game) |
@@ -209,6 +210,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0046-permutations](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 ## Math
 |  |
