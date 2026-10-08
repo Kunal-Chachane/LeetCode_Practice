@@ -22,6 +22,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0078-subsets](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0078-subsets) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0088-merge-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0088-merge-sorted-array) |
 | [0118-pascals-triangle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0118-pascals-triangle) |
 | [0136-single-number](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0137-single-number-ii) |
@@ -100,6 +101,7 @@ A structured repository of Python practice problems, examples, and experimental 
 ## Sorting
 |  |
 | ------- |
+| [0088-merge-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0088-merge-sorted-array) |
 | [0164-maximum-gap](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0164-maximum-gap) |
 | [0169-majority-element](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0215-kth-largest-element-in-an-array) |
@@ -251,6 +253,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0061-rotate-list](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0061-rotate-list) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
+| [0088-merge-sorted-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0088-merge-sorted-array) |
 | [0141-linked-list-cycle](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0142-linked-list-cycle-ii) |
 | [0151-reverse-words-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0151-reverse-words-in-a-string) |
