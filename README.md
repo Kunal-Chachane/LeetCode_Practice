@@ -73,6 +73,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [2540-minimum-common-value](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2540-minimum-common-value) |
 | [2545-sort-the-students-by-their-kth-score](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2545-sort-the-students-by-their-kth-score) |
 | [2549-count-distinct-numbers-on-board](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2549-count-distinct-numbers-on-board) |
+| [2778-sum-of-squares-of-special-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2778-sum-of-squares-of-special-elements) |
 | [2974-minimum-number-game](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2974-minimum-number-game) |
 | [3285-find-indices-of-stable-mountains](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3285-find-indices-of-stable-mountains) |
 | [3379-transformed-array](https://github.com/Kunal-Chachane/Python_Practice/tree/master/3379-transformed-array) |
@@ -548,4 +549,8 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0459-repeated-substring-pattern](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0459-repeated-substring-pattern) |
+## Enumeration
+|  |
+| ------- |
+| [2778-sum-of-squares-of-special-elements](https://github.com/Kunal-Chachane/Python_Practice/tree/master/2778-sum-of-squares-of-special-elements) |
 <!---LeetCode Topics End-->
