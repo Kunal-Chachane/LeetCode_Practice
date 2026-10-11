@@ -198,6 +198,7 @@ A structured repository of Python practice problems, examples, and experimental 
 | [0389-find-the-difference](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0389-find-the-difference) |
 | [0412-fizz-buzz](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0412-fizz-buzz) |
 | [0451-sort-characters-by-frequency](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0451-sort-characters-by-frequency) |
+| [0459-repeated-substring-pattern](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0459-repeated-substring-pattern) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 | [0844-backspace-string-compare](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0844-backspace-string-compare) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Kunal-Chachane/Python_Practice/tree/master/1221-split-a-string-in-balanced-strings) |
@@ -281,6 +282,7 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
+| [0459-repeated-substring-pattern](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0459-repeated-substring-pattern) |
 | [0796-rotate-string](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0796-rotate-string) |
 ## Bit Manipulation
 |  |
@@ -538,4 +540,12 @@ A structured repository of Python practice problems, examples, and experimental 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0128-longest-consecutive-sequence) |
+## Z Algorithm
+|  |
+| ------- |
+| [0459-repeated-substring-pattern](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0459-repeated-substring-pattern) |
+## Knuth–Morris–Pratt Algorithm
+|  |
+| ------- |
+| [0459-repeated-substring-pattern](https://github.com/Kunal-Chachane/Python_Practice/tree/master/0459-repeated-substring-pattern) |
 <!---LeetCode Topics End-->
